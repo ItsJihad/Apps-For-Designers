@@ -1,15 +1,14 @@
-import React from 'react'
+
 import CardDetails from '../../components/cardsholder/CardDetails'
 import { useLoaderData, useParams } from 'react-router'
 
 function AppDetails() {
+    const appdata=useLoaderData()
+    const {id}=useParams()
+    const parsedId= parseInt(id)
     
-    const { id } = useParams(); // ✅ call the function
-  const parsedId = parseInt(id, 10); // always specify radix
-  const appdata = useLoaderData();
-  const singleApp = appdata.find(app => app.id === parsedId);
-
-  console.log(singleApp);
+    const singleApp = appdata.find(app=>app.id === parsedId)
+  
     
     
 

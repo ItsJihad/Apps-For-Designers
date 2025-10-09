@@ -1,7 +1,9 @@
+import Chart from "../recharts/Chart";
 
 
 function CardDetails({singleApp}) {
-      
+      const { id, image, title, description, size, reviews, downloads, ratingAvg ,ratings } =
+    singleApp;
       
   return (
     
@@ -10,13 +12,13 @@ function CardDetails({singleApp}) {
   <div className="flex lg:flex-row flex-col gap-5 items-stretch">
   
     <div className="flex-1">
-      <img className="rounded-xl shadow-2xl h-full" alt="" src="/app-logo/icon-005.webp" />
+      <img className="rounded-xl shadow-2xl h-full" alt="" src={image} />
     </div>
 
    
     <div className="flex-2">
       <div className="space-y-3 border-b-2 pb-4 border-secondary">
-        <h2 className="text-primary text-3xl font-bold">{singleApp.title}</h2>
+        <h2 className="text-primary text-3xl font-bold">{title}</h2>
         <p>
           Developed by <span className="text-secondary font-medium">ItsJihad</span>
         </p>
@@ -41,7 +43,7 @@ function CardDetails({singleApp}) {
               </svg>
             </div>
             <div className="stat-title">Downloads</div>
-            <div className="stat-value">{singleApp.downloads}</div>
+            <div className="stat-value">{downloads}</div>
           </div>
 
           <div className="stat">
@@ -59,7 +61,7 @@ function CardDetails({singleApp}) {
               </svg>
             </div>
             <div className="stat-title">Average Ratings</div>
-            <div className="stat-value">{singleApp.ratingAvg}</div>
+            <div className="stat-value">{ratingAvg}</div>
           </div>
 
           <div className="stat">
@@ -78,7 +80,7 @@ function CardDetails({singleApp}) {
               </svg>
             </div>
             <div className="stat-title">Total Reviews</div>
-            <div className="stat-value">{singleApp.reviews}</div>
+            <div className="stat-value">{reviews}</div>
           </div>
         </div>
       </div>
@@ -99,7 +101,7 @@ function CardDetails({singleApp}) {
   <div>
     <h2 className="text-4xl font-bold text-primary mb-5">Ratings</h2>
     <div style={{ width: "100%", height: "400px" }}>
-      {/*Recharts component*/}
+      <Chart ratings={ ratings }></Chart>
     </div>
   </div>
 
@@ -110,7 +112,7 @@ function CardDetails({singleApp}) {
   <div>
     <h2 className="text-4xl font-bold text-primary mb-5">Description</h2>
     <div className="text-justify space-y-3 opacity-60">
-      {singleApp.description}
+      {description}
     </div>
   </div>
 </div>
