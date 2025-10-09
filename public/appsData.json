@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://cdn.example.com/apps/chatwave.png",
+    "image": "https://img.icons8.com/color/512/speech-bubble--v1.png",
     "title": "ChatWave",
     "companyName": "PixelStorm Inc.",
     "id": 1,
@@ -18,25 +18,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/snapify.png",
-    "title": "Snapify",
-    "companyName": "Vortex Studios",
-    "id": 2,
-    "description": "Edit, filter, and enhance your photos with professional tools in one tap.",
-    "size": 72,
-    "reviews": 8942,
-    "ratingAvg": 4.3,
-    "downloads": 3000000,
-    "ratings": [
-      { "name": "1 star", "count": 520 },
-      { "name": "2 star", "count": 630 },
-      { "name": "3 star", "count": 1045 },
-      { "name": "4 star", "count": 2680 },
-      { "name": "5 star", "count": 4067 }
-    ]
-  },
-  {
-    "image": "https://cdn.example.com/apps/taskmate.png",
+    "image": "https://img.icons8.com/color/512/task.png",
     "title": "TaskMate",
     "companyName": "ProDev Apps",
     "id": 3,
@@ -54,7 +36,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/beatflow.png",
+    "image": "https://img.icons8.com/color/512/musical-notes.png",
     "title": "BeatFlow",
     "companyName": "SonicStream",
     "id": 4,
@@ -72,43 +54,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/fitzone.png",
-    "title": "FitZone",
-    "companyName": "ActiveLabs",
-    "id": 5,
-    "description": "Your all-in-one fitness tracker and meal planner.",
-    "size": 60,
-    "reviews": 10321,
-    "ratingAvg": 4.2,
-    "downloads": 2500000,
-    "ratings": [
-      { "name": "1 star", "count": 720 },
-      { "name": "2 star", "count": 940 },
-      { "name": "3 star", "count": 1760 },
-      { "name": "4 star", "count": 3340 },
-      { "name": "5 star", "count": 4561 }
-    ]
-  },
-  {
-    "image": "https://cdn.example.com/apps/learnify.png",
-    "title": "Learnify",
-    "companyName": "EduWorld",
-    "id": 6,
-    "description": "Interactive learning platform with daily quizzes and video tutorials.",
-    "size": 84,
-    "reviews": 4032,
-    "ratingAvg": 4.7,
-    "downloads": 1900000,
-    "ratings": [
-      { "name": "1 star", "count": 110 },
-      { "name": "2 star", "count": 150 },
-      { "name": "3 star", "count": 380 },
-      { "name": "4 star", "count": 950 },
-      { "name": "5 star", "count": 2442 }
-    ]
-  },
-  {
-    "image": "https://cdn.example.com/apps/fintrack.png",
+    "image": "https://img.icons8.com/color/512/wallet.png",
     "title": "FinTrack",
     "companyName": "MoneyTree Apps",
     "id": 7,
@@ -126,7 +72,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/travelly.png",
+    "image": "https://img.icons8.com/color/512/earth-planet.png",
     "title": "Travelly",
     "companyName": "SkyTrip Studios",
     "id": 8,
@@ -144,7 +90,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/cooksmart.png",
+    "image": "https://img.icons8.com/color/512/cooking-pot.png",
     "title": "CookSmart",
     "companyName": "TastyWorks",
     "id": 9,
@@ -162,7 +108,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/newsflash.png",
+    "image": "https://img.icons8.com/color/512/news.png",
     "title": "NewsFlash",
     "companyName": "RealTime Media",
     "id": 10,
@@ -180,7 +126,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/gameland.png",
+    "image": "https://img.icons8.com/color/512/controller.png",
     "title": "GameLand",
     "companyName": "ZetaPlay Studios",
     "id": 11,
@@ -198,7 +144,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/mindspace.png",
+    "image": "https://img.icons8.com/color/512/brain.png",
     "title": "MindSpace",
     "companyName": "CalmTech",
     "id": 12,
@@ -216,7 +162,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/shopifygo.png",
+    "image": "https://img.icons8.com/color/512/shop.png",
     "title": "Shopify Go",
     "companyName": "Shopify Inc.",
     "id": 13,
@@ -234,7 +180,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/vidmaker.png",
+    "image": "https://img.icons8.com/color/512/video-editing.png",
     "title": "VidMaker",
     "companyName": "MotionX",
     "id": 14,
@@ -252,7 +198,7 @@
     ]
   },
   {
-    "image": "https://cdn.example.com/apps/weatherahead.png",
+    "image": "https://img.icons8.com/color/512/partly-cloudy-day.png",
     "title": "WeatherAhead",
     "companyName": "SkyTech",
     "id": 15,

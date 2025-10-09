@@ -1,7 +1,7 @@
 
 import Card from '../cardsholder/Card'
 
-function Cardsholder() {
+function Cardsholder({appdata}) {
   return (
     <div>
   <div className="pt-10">
@@ -29,7 +29,7 @@ function Cardsholder() {
   </div>
 
   <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
-    <Card></Card>
+    {appdata.slice(0,8).map(apps=> <Card key={apps.id} apps={apps} ></Card>)}
   </div>
 
   <div className="text-center">
