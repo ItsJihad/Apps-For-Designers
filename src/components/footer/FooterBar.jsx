@@ -4,7 +4,7 @@ function FooterBar() {
   return (
     <div>
       
-      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 items-center">
+      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content mt-10 p-10 items-center">
   
     
     <nav>

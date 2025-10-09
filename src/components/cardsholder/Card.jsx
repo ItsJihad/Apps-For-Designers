@@ -1,11 +1,9 @@
-function Card({apps}) {
+import { Link } from "react-router";
+function Card({ apps }) {
   return (
-    <div>
-      <a
-      className="card shadow-lg cursor-pointer bg-white hover:bg-base-200 hover:-translate-y-2 transition-all duration-200 p-4 gap-4"
-      href="/apps/1"
-      data-discover="true"
-    >
+    <Link to='/appdetails:id'><div className="card shadow-lg cursor-pointer bg-white hover:bg-base-200
+      hover:-translate-y-2 transition-all duration-200 p-4 gap-4">
+      
       <figure className="pb-0">
         <img
           alt="Shoes"
@@ -14,9 +12,7 @@ function Card({apps}) {
         />
       </figure>
       <div>
-        <p className="font-semibold text-center">
-          {apps.title}
-        </p>
+        <p className="font-semibold text-center">{apps.title}</p>
       </div>
       <div className="flex justify-between">
         <div className="badge badge-soft badge-success">
@@ -52,9 +48,8 @@ function Card({apps}) {
           {apps.ratingAvg}
         </div>
       </div>
-    </a>
-    </div>
-  )
+    </div></Link>
+  );
 }
 
-export default Card
+export default Card;

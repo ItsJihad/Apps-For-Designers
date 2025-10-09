@@ -1,5 +1,8 @@
 
-function CardDetails() {
+
+function CardDetails({singleApp}) {
+      
+      
   return (
     
     
@@ -13,9 +16,9 @@ function CardDetails() {
    
     <div className="flex-2">
       <div className="space-y-3 border-b-2 pb-4 border-secondary">
-        <h2 className="text-primary text-3xl font-bold">Forest: Focus for Productivity</h2>
+        <h2 className="text-primary text-3xl font-bold">{singleApp.title}</h2>
         <p>
-          Developed by <span className="text-secondary font-medium">productive.io</span>
+          Developed by <span className="text-secondary font-medium">ItsJihad</span>
         </p>
       </div>
 
@@ -38,7 +41,7 @@ function CardDetails() {
               </svg>
             </div>
             <div className="stat-title">Downloads</div>
-            <div className="stat-value">7M</div>
+            <div className="stat-value">{singleApp.downloads}</div>
           </div>
 
           <div className="stat">
@@ -56,7 +59,7 @@ function CardDetails() {
               </svg>
             </div>
             <div className="stat-title">Average Ratings</div>
-            <div className="stat-value">4.9</div>
+            <div className="stat-value">{singleApp.ratingAvg}</div>
           </div>
 
           <div className="stat">
@@ -75,7 +78,7 @@ function CardDetails() {
               </svg>
             </div>
             <div className="stat-title">Total Reviews</div>
-            <div className="stat-value">17K</div>
+            <div className="stat-value">{singleApp.reviews}</div>
           </div>
         </div>
       </div>
@@ -83,7 +86,7 @@ function CardDetails() {
      
       <div>
         <button className="btn shadow-xl hover:shadow-2xl btn-xl skeleton bg-success btn-success text-white">
-          Install Now (xsss)
+          Install Now
         </button>
       </div>
     </div>
@@ -107,7 +110,7 @@ function CardDetails() {
   <div>
     <h2 className="text-4xl font-bold text-primary mb-5">Description</h2>
     <div className="text-justify space-y-3 opacity-60">
-      {/* Description */}
+      {singleApp.description}
     </div>
   </div>
 </div>

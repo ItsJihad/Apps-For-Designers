@@ -1,13 +1,151 @@
+import { Link } from "react-router";
 export default function Header() {
+  const tablinks = (
+    <ul
+      tabIndex={0}
+      className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow gap-3 lg:flex"
+    >
+      <li>
+        <Link
+          to="/"
+          className="text-gray-500 font-semibold active flex items-center gap-2"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 24 24"
+            height="18"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
+          </svg>
+          Home
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/apps"
+          className="text-gray-500 font-semibold flex items-center gap-2"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 512 512"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M255.9 120.9l9.1-15.7c5.6-9.8 18.1-13.1 27.9-7.5 9.8 5.6 13.1 18.1 7.5 27.9l-87.5 151.5h63.3c20.5 0 32 24.1 23.1 40.8H113.8c-11.3 0-20.4-9.1-20.4-20.4 0-11.3 9.1-20.4 20.4-20.4h52l66.6-115.4-20.8-36.1c-5.6-9.8-2.3-22.2 7.5-27.9 9.8-5.6 22.2-2.3 27.9 7.5l8.9 15.7zm-78.7 218l-19.6 34c-5.6 9.8-18.1 13.1-27.9 7.5-9.8-5.6-13.1-18.1-7.5-27.9l14.6-25.2c16.4-5.1 29.8-1.2 40.4 11.6zm168.9-61.7h53.1c11.3 0 20.4 9.1 20.4 20.4 0 11.3-9.1 20.4-20.4 20.4h-29.5l19.9 34.5c5.6 9.8 2.3 22.2-7.5 27.9-9.8 5.6-22.2 2.3-27.9-7.5-33.5-58.1-58.7-101.6-75.4-130.6-17.1-29.5-4.9-59.1 7.2-69.1 13.4 23 33.4 57.7 60.1 104zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"></path>
+          </svg>
+          Apps
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/installation"
+          className="text-gray-500 font-semibold flex items-center gap-2"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 24 24"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M20 17H4V5h8V3H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h4v2h8v-2h4c1.1 0 2-.9 2-2v-3h-2v3z"></path>
+            <path d="m17 14 5-5-1.41-1.41L18 10.17V3h-2v7.17l-2.59-2.58L12 9z"></path>
+          </svg>
+          Installation
+        </Link>
+      </li>
+    </ul>
+  );
+
+  const pclinks = (
+    <ul className="menu menu-horizontal px-1 gap-5">
+      <li>
+        <Link
+          to="/"
+          className="text-gray-500 font-semibold active flex items-center gap-2"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 24 24"
+            height="18"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
+          </svg>
+          Home
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/apps"
+          className="text-gray-500 font-semibold flex items-center gap-2"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 512 512"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M255.9 120.9l9.1-15.7c5.6-9.8 18.1-13.1 27.9-7.5 9.8 5.6 13.1 18.1 7.5 27.9l-87.5 151.5h63.3c20.5 0 32 24.1 23.1 40.8H113.8c-11.3 0-20.4-9.1-20.4-20.4 0-11.3 9.1-20.4 20.4-20.4h52l66.6-115.4-20.8-36.1c-5.6-9.8-2.3-22.2 7.5-27.9 9.8-5.6 22.2-2.3 27.9 7.5l8.9 15.7zm-78.7 218l-19.6 34c-5.6 9.8-18.1 13.1-27.9 7.5-9.8-5.6-13.1-18.1-7.5-27.9l14.6-25.2c16.4-5.1 29.8-1.2 40.4 11.6zm168.9-61.7h53.1c11.3 0 20.4 9.1 20.4 20.4 0 11.3-9.1 20.4-20.4 20.4h-29.5l19.9 34.5c5.6 9.8 2.3 22.2-7.5 27.9-9.8 5.6-22.2 2.3-27.9-7.5-33.5-58.1-58.7-101.6-75.4-130.6-17.1-29.5-4.9-59.1 7.2-69.1 13.4 23 33.4 57.7 60.1 104zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"></path>
+          </svg>
+          Apps
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          to="/installation"
+          className="text-gray-500 font-semibold flex items-center gap-2"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox="0 0 24 24"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M20 17H4V5h8V3H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h4v2h8v-2h4c1.1 0 2-.9 2-2v-3h-2v3z"></path>
+            <path d="m17 14 5-5-1.41-1.41L18 10.17V3h-2v7.17l-2.59-2.58L12 9z"></path>
+          </svg>
+          Installation
+        </Link>
+      </li>
+    </ul>
+  );
+
   return (
     <header>
       <div className="shadow bg-white py-1">
         <div className="navbar w-11/12 mx-auto">
-     
           <div className="navbar-start">
-
             <div className="dropdown">
-              <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -23,110 +161,19 @@ export default function Header() {
                   />
                 </svg>
               </div>
-
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow gap-3"
-              >
-                <li>
-                  <a
-                    href="/"
-                    aria-current="page"
-                    className="text-gray-500 font-semibold active"
-                  >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 24 24"
-                      height="18"
-                      width="18"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
-                    </svg>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/apps" className="text-gray-500 font-semibold">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      height="20"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M255.9 120.9l9.1-15.7c5.6-9.8 18.1-13.1 27.9-7.5 9.8 5.6 13.1 18.1 7.5 27.9l-87.5 151.5h63.3c20.5 0 32 24.1 23.1 40.8H113.8c-11.3 0-20.4-9.1-20.4-20.4 0-11.3 9.1-20.4 20.4-20.4h52l66.6-115.4-20.8-36.1c-5.6-9.8-2.3-22.2 7.5-27.9 9.8-5.6 22.2-2.3 27.9 7.5l8.9 15.7zm-78.7 218l-19.6 34c-5.6 9.8-18.1 13.1-27.9 7.5-9.8-5.6-13.1-18.1-7.5-27.9l14.6-25.2c16.4-5.1 29.8-1.2 40.4 11.6zm168.9-61.7h53.1c11.3 0 20.4 9.1 20.4 20.4 0 11.3-9.1 20.4-20.4 20.4h-29.5l19.9 34.5c5.6 9.8 2.3 22.2-7.5 27.9-9.8 5.6-22.2 2.3-27.9-7.5-33.5-58.1-58.7-101.6-75.4-130.6-17.1-29.5-4.9-59.1 7.2-69.1 13.4 23 33.4 57.7 60.1 104zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"></path>
-                    </svg>
-                    Apps
-                  </a>
-                </li>
-                <li>
-                  <a href="/installations" className="text-gray-500 font-semibold">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 24 24"
-                      height="20"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path d="M20 17H4V5h8V3H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h4v2h8v-2h4c1.1 0 2-.9 2-2v-3h-2v3z"></path>
-                      <path d="m17 14 5-5-1.41-1.41L18 10.17V3h-2v7.17l-2.59-2.58L12 9z"></path>
-                    </svg>
-                    Installation
-                  </a>
-                </li>
-              </ul>
+              {tablinks}
             </div>
 
-
             <a href="/" className="flex items-center gap-2">
-              <img alt="Logo" className="w-12" src={'./src/assets/logo.png'} />
+              <img alt="Logo" className="w-12" src={"./src/assets/logo.png"} />
               <h2 className="text-xl  uppercase font-semibold text-purple-700">
                 Realtime<span>Hype</span>
               </h2>
             </a>
           </div>
 
+          <div className="navbar-center hidden lg:flex">{pclinks}</div>
 
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 gap-5">
-              <li>
-                <a href="/" className="text-gray-500 font-semibold active">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 24 24"
-                    height="18"
-                    width="18"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
-                  </svg>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/apps" className="text-gray-500 font-semibold">
-                  Apps
-                </a>
-              </li>
-              <li>
-                <a href="/installations" className="text-gray-500 font-semibold">
-                  Installation
-                </a>
-              </li>
-            </ul>
-          </div>
-
-      
           <div className="navbar-end">
             <a
               href="https://github.com/itsjihad"
