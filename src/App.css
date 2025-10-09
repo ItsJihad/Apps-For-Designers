@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.text-secondary{
+       @apply  text-[#422AD5]
+}

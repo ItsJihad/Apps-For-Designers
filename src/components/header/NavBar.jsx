@@ -165,9 +165,15 @@ export default function Header() {
             </div>
 
             <a href="/" className="flex items-center gap-2">
-              <img alt="Logo" className="w-12" src={"./src/assets/logo.png"} />
+              <Link to={"/"}>
+                <img
+                  alt="Logo"
+                  className="w-12"
+                  src={"./src/assets/logo.png"}
+                />
+              </Link>
               <h2 className="text-xl  uppercase font-semibold text-purple-700">
-                Realtime<span>Hype</span>
+                Realtime<span> Hype</span>
               </h2>
             </a>
           </div>
@@ -179,7 +185,7 @@ export default function Header() {
               href="https://github.com/itsjihad"
               target="_blank"
               rel="noreferrer"
-              className="btn btn-secondary bg-gradient-to-r from-violet-500 to-blue-500 flex items-center gap-2"
+              className="btn text-white bg-gradient-to-r from-violet-500 to-blue-500 flex items-center rounded gap-2"
             >
               <svg
                 stroke="currentColor"
