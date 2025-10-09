@@ -29,7 +29,7 @@ function Allapps() {
       </div>
 
       <div className="w-11/12 mx-auto flex flex-col-reverse lg:flex-row gap-5 items-start justify-between lg:items-end mt-10 sticky">
-        <h2 className="text-lg underline font-bold">(132) Apps Found</h2>
+        <h2 className="text-lg underline font-bold">({appdata.length}) Apps Found</h2>
         <div>
           <label className="input max-w-[300px] w-[300px] input-secondary flex items-center">
             <svg
