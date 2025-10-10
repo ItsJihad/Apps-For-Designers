@@ -11,7 +11,7 @@ so basically it was an assignment given by Programming hero . and the technologi
         }
     Tailwind{
           DaisyUi,
-          -CustomCss
+          CustomCss
             }
     
 ```
