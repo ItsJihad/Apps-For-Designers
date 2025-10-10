@@ -1,11 +1,13 @@
 import { useLoaderData } from "react-router";
 import { getStoredApp,RemoveAppsDB } from "../../utilities/localhost";
 import { toast, ToastContainer } from "react-toastify";
+import { useState } from "react";
 
 function Install() {
   const appdata = useLoaderData();
   const stored = getStoredApp();
 
+  const [remove,setRemove]=useState([])
  
   
 
@@ -19,7 +21,7 @@ function Install() {
       <div className="px-5 lg:w-11/12 mx-auto py-10">
       <ToastContainer></ToastContainer>
         <div>
-          <h2 className="text-4xl font-bold text-center text-primary flex justify-center gap-3">
+          <h2 className="text-4xl font-bold text-center active flex justify-center gap-3">
             Your Installed Apps
             <svg
               stroke="currentColor"
@@ -43,7 +45,8 @@ function Install() {
           </p>
         </div>
 
-        <div className="flex justify-between mt-10 sticky">
+        <div className="all">
+          <div className="flex justify-between mt-10 sticky">
           <h2 className="text-lg underline text-secondary font-medium">
             {stored.length} Apps Found
           </h2>
@@ -120,6 +123,7 @@ function Install() {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </div>
   );

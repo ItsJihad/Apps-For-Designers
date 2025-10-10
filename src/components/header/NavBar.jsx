@@ -77,7 +77,7 @@ export default function Header() {
             </div>
 
             <NavLink to="/" className="flex items-center gap-2">
-              <img alt="Logo" className="w-12" src={"./src/assets/logo.png"} />
+              <img alt="Logo" className="w-12" src={"/assets/logo.png"} />
               <h2 className="text-xl uppercase font-semibold text-purple-700">
                 Realtime<span> Hype</span>
               </h2>

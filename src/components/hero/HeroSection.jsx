@@ -5,9 +5,10 @@ export default function HeroSection() {
         <div className="flex flex-col justify-center items-center w-11/12 mx-auto pt-10 pb-0">
           <div className="space-y-5 text-center">
             <h2 className="text-6xl font-bold leading-20 max-w-xl mx-auto">
-              We Build <br></br><span className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-  Productive
-</span>
+              We Build <br></br>
+              <span className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                Productive
+              </span>
               <span className="text-primary"> Apps</span>
             </h2>
             <p className="italic max-w-9/12 mx-auto">
@@ -51,7 +52,7 @@ export default function HeroSection() {
           <img
             alt="Hero Illustration"
             className="pt-10"
-            src={'./src/assets/hero.png'}
+            src={"/assets/hero.png"}
           />
         </div>
       </div>

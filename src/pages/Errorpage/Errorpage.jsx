@@ -5,7 +5,7 @@ function Errorpage() {
   return (
     <div>
       <div class="flex flex-col items-center justify-center h-screen text-center p-5">
-        <img src={'./src/assets/error-404.png'} />
+        <img src={'/assets/error404.png'} />
           
         <h1 class="text-6xl font-extrabold text-primary mt-5">404</h1>
         <h2 class="text-2xl font-semibold mt-3">Oops, page not found!</h2>
