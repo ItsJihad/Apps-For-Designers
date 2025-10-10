@@ -1,13 +1,20 @@
 import { useLoaderData } from "react-router";
+import { useState } from "react";
 import Card from "../../components/cardsholder/Card";
 
 function Allapps() {
-  const appdata=useLoaderData()
+  const appdata = useLoaderData();
+  const [searchTerm, setSearchTerm] = useState("");
+
+
+  const filteredApps = appdata.filter((app) =>
+    app.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div>
       <div className="py-16">
-        <h2 className="text-4xl font-bold text-center text-primary flex justify-center gap-3">
+        <h2 className="text-4xl font-bold text-center active flex justify-center gap-3">
           Our All Applications
           <svg
             stroke="currentColor"
@@ -28,10 +35,13 @@ function Allapps() {
         </p>
       </div>
 
+   
       <div className="w-11/12 mx-auto flex flex-col-reverse lg:flex-row gap-5 items-start justify-between lg:items-end mt-10 sticky">
-        <h2 className="text-lg underline font-bold">({appdata.length}) Apps Found</h2>
+        <h2 className="text-lg underline font-bold">
+          ({filteredApps.length}) Apps Found
+        </h2>
         <div>
-          <label className="input max-w-[300px] w-[300px] input-secondary flex items-center">
+          <label className="input max-w-[300px] w-[300px] border border-purple-950 flex items-center">
             <svg
               className="h-[1em] opacity-50 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,16 +60,23 @@ function Allapps() {
             </svg>
             <input
               className="flex-1"
-              required
-              placeholder="Search Apps"
               type="search"
+              placeholder="Search Apps"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
           </label>
         </div>
       </div>
 
       <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
-        {appdata.map(apps=><Card key={apps.id} apps={apps}></Card>)}
+        {filteredApps.length > 0 ? (
+          filteredApps.map((apps) => <Card key={apps.id} apps={apps} />)
+        ) : (
+          <p className="text-center text-gray-400 col-span-full">
+            No apps found matching “{searchTerm}”.
+          </p>
+        )}
       </div>
     </div>
   );

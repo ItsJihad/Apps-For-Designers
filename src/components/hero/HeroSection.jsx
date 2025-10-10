@@ -22,7 +22,7 @@ export default function HeroSection() {
                 href="https://play.google.com/store/games"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-xl hover:shadow-xl rounded-xl"
+                className="border border-gray-400 px-6 flex items-center btn-xl hover:shadow-xl rounded-lg"
               >
                 <img
                   alt="Google Play"
@@ -36,7 +36,7 @@ export default function HeroSection() {
                 href="https://www.apple.com/app-store/"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-xl hover:shadow-xl rounded-xl"
+                className="border border-gray-400 px-6 flex items-center btn-xl hover:shadow-xl rounded-lg"
               >
                 <img
                   alt="App Store"

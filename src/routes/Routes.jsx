@@ -5,12 +5,13 @@ import Homepage from "../pages/Home/Homepage";
 import Allapps from "../pages/Allapps/Allapps";
 import Install from "../pages/Installation/Install";
 import AppDetails from "../pages/SpecificApps/AppDetails";
+import { Suspense } from "react";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    errorElement: <Errorpage></Errorpage>,
+    errorElement:<Errorpage></Errorpage>,
     children:[
        {
       index: true,
