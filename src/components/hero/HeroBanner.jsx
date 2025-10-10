@@ -7,7 +7,7 @@ export default function HeroBanner() {
         </h2>
 
         <div className="stats stats-vertical lg:stats-horizontal text-white py-10">
-          {/* Total Downloads */}
+       
           <div className="stat space-y-3">
             <div className="stat-figure">
               <svg
@@ -27,7 +27,7 @@ export default function HeroBanner() {
             <div className="stat-desc text-white">21% more than last month</div>
           </div>
 
-          {/* Total Reviews */}
+        
           <div className="stat space-y-3">
             <div className="stat-figure">
               <svg
@@ -47,7 +47,7 @@ export default function HeroBanner() {
             <div className="stat-desc text-white">46% more than last month</div>
           </div>
 
-          {/* Active Apps */}
+          
           <div className="stat space-y-3">
             <div className="stat-figure">
               <svg
