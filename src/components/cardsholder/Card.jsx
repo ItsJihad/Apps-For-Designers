@@ -3,7 +3,7 @@ function Card({ apps }) {
   const { id, image, title, description, size, reviews, downloads, ratingAvg } =
     apps;
   return (
-    <Link to={`/appdetails/${id}`}>
+    <Link to={`/app/${id}`}>
       <div
         className="card shadow-lg cursor-pointer bg-white hover:bg-base-200
       hover:-translate-y-2 transition-all duration-200 p-4 gap-4"

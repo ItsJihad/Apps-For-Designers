@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
     },
     {  
       loader:()=> fetch("/appsData.json"),
-      path:'/appdetails/:id',
+      path:'/app/:id',
       Component:AppDetails
 
     }

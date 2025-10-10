@@ -88,7 +88,7 @@ function CardDetails({singleApp}) {
      
       <div>
         <button className="btn shadow-xl hover:shadow-2xl btn-xl skeleton bg-success btn-success text-white">
-          Install Now
+          <span>{`Install Now ( ${size} MB )`}</span> 
         </button>
       </div>
     </div>
